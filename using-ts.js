@@ -10,5 +10,19 @@ function add(num1, num2, showResult) {
     }
 }
 button.addEventListener('click', function () {
-    console.log(add(+input1.value, +input2.value));
+    console.log(add(+input1.value, +input2.value, true));
 });
+var person = {
+    name: 'Maximilian',
+    age: 30,
+    hobbies: ['Sports', 'Cooking'],
+    role: [2, 'author']
+};
+// person.role.push('admin');
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 5] = "ADMIN";
+    Role[Role["READ_ONLY"] = 6] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 7] = "AUTHOR";
+})(Role || (Role = {}));
+;

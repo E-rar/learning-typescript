@@ -13,5 +13,19 @@ function add (num1: number , num2 : number,showResult:boolean){
 }
 
 button.addEventListener('click',function(){
-    console.log(add(+input1.value,+input2.value))
+    console.log(add(+input1.value,+input2.value,true))
 })
+
+const person: {
+    name:string;
+    age:number;
+    hobbies: string[];
+    role:[number,string];
+} ={
+    name:'Maximilian',
+    age:30,
+    hobbies:['Sports','Cooking'],
+    role:[2,'author']
+}
+// person.role.push('admin');
+enum Role {ADMIN=5, READ_ONLY,AUTHOR};
